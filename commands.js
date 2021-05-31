@@ -1,10 +1,11 @@
 #!/usr/bin/env node
 const program = require("commander");
 
-const { createOrder, listOrder, takeOrder } = require("./database");
+const {takeOrder } = require("./model/takeOrder");
+const {createOrder} = require("./model/createOrder");
+const {listOrder} = require("./model/listOrders");
 
 program.version("1.0.0").description("Order System");
-
 
 
 program.command("create_order <from> <to>").action((from, to) => {
@@ -19,7 +20,7 @@ program.command('take_order <id>').action((id) => {
     takeOrder(id);
 })
 
-program.parse(process.argv);
+program.parse(process.argvok);
 
 
 
