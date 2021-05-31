@@ -50,10 +50,10 @@ After initialising the setup, users can start to use commands:
 ### Error code
 
 ```
-**code 301 insertion error:** misuse of insertion command for example wrong datatype etc.
-**code 302 incomplete query error:** database handle is closed, the query is incomplete or in wrong syntax.
-**code 303 connection error:** unable to close due to unfinalized statements or unfinished backups, probably there is another application connection to the database.
-**code 500 Internal server error:** Any other errors
+**code 1 insertion error:** misuse of insertion command for example wrong datatype etc.
+**code 21 SQLITE_MISUSE:** database handle is closed, the query is incomplete or in wrong syntax.
+**code 5 SQLITE_BUSY:** unable to close due to unfinalized statements or unfinished backups, probably there is another application connection to the database.
+
 
 ```
 
