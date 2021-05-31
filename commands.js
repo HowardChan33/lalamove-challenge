@@ -1,4 +1,4 @@
-#!/usr/bin/env node
+#!/usr/bin/env node\n
 const program = require("commander");
 
 const {takeOrder } = require("./model/takeOrder");
