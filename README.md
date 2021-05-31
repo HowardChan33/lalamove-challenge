@@ -55,6 +55,7 @@ After initialising the setup, users can start to use commands:
 **code 500 Internal server error:** Any other errors
 
 ### Database
+```
 Schema of the database
 
 CREATE TABLE "orders" (
@@ -65,6 +66,6 @@ CREATE TABLE "orders" (
     "isTaken"    TEXT DEFAULT 0
 )
 
-
+```
 
 
