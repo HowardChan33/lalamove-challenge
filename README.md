@@ -30,7 +30,8 @@ After initialising the setup, users can start to use commands:
 `llm take_order [id]` take an available order
 
 ### Structure of the project 
-
+```
+.
 ├── README.md
 ├── Model
 │   ├── createOrder.js
@@ -44,6 +45,8 @@ After initialising the setup, users can start to use commands:
 ├── setup.sh
 └── test.sh
 
+
+```
 ### Error code
 
 **code 301 insertion error:** misuse of insertion command for example wrong datatype etc.
